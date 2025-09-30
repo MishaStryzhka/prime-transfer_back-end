@@ -11,7 +11,7 @@ const app = express();
 app.use(
   cors({
     // eslint-disable-next-line no-undef
-    origin: process.env.FRONTEND_URL,
+    origin: ['http://localhost:5173', process.env.FRONTEND_URL],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
